@@ -3,8 +3,8 @@ A Next.js frontend for a team task and project management application. It provid
 
 ## Links
 
-- Repository: https://github.com/SandeepVashishtha/Team-Task-Manager
-- Live demo: https://team-task-manager-sable.vercel.app/
+- Repository: https://github.com/VineetKaur80/Task-Manager
+- Live demo: https://task-manager-khaki-eight-38.vercel.app
 
 ## Features
 
