@@ -5,23 +5,23 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ── Design Tokens (Team Task Manager warm editorial palette) ────────────── */
+/* ── Design Tokens (White and Pink Theme) ────────────── */
 :root {
-  --bg:            #FAF9F7;
+  --bg:            #FFFFFF;
   --bg-card:       #FFFFFF;
-  --bg-hover:      #F3F1EE;
-  --border:        #E7E5E3;
-  --border-strong: #D6D3D1;
-  --text:          #1C1917;
-  --text-muted:    #78716C;
-  --text-subtle:   #A8A29E;
-  --accent:        #4A5548;
-  --accent-light:  #8A9A8E;
-  --accent-glow:   rgba(74,85,72,.08);
-  --success:       #16A34A;
-  --warning:       #D97706;
-  --danger:        #DC2626;
-  --info:          #2563EB;
+  --bg-hover:      #F8F5FF;
+  --border:        #E5E7EB;
+  --border-strong: #D1D5DB;
+  --text:          #1F2937;
+  --text-muted:    #6B7280;
+  --text-subtle:   #9CA3AF;
+  --accent:        #EC4899;
+  --accent-light:  #F472B6;
+  --accent-glow:   rgba(236,72,153,.08);
+  --success:       #10B981;
+  --warning:       #F59E0B;
+  --danger:        #EF4444;
+  --info:          #3B82F6;
   --radius:        12px;
   --radius-sm:     8px;
   --radius-xs:     6px;

@@ -6,15 +6,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        surface: '#FAF9F7',
-        'surface-alt': '#F3F1EE',
-        'on-surface': '#1C1917',
-        primary: '#4A5548',
-        'primary-container': '#8A9A8E',
-        secondary: '#78716C',
-        tertiary: '#B45309',
-        outline: '#D6D3D1',
-        'outline-variant': '#E7E5E3',
+        surface: '#FFFFFF',
+        'surface-alt': '#F8F5FF',
+        'on-surface': '#1F2937',
+        primary: '#EC4899',
+        'primary-container': '#F472B6',
+        secondary: '#6B7280',
+        tertiary: '#F59E0B',
+        outline: '#D1D5DB',
+        'outline-variant': '#E5E7EB',
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],

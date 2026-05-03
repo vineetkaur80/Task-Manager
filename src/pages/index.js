@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { useAuth } from '../context/AuthContext';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
@@ -8,46 +7,15 @@ export default function Home() {
   const router = useRouter();
 
   useEffect(() => {
-    if (token) router.replace('/dashboard');
-  }, [token]); // eslint-disable-line
+    if (token) {
+      router.replace('/dashboard');
+    } else {
+      router.replace('/auth/login');
+    }
+  }, [token, router]);
 
-  return (
-    <div style={{
-      minHeight: '100vh', display: 'flex', flexDirection: 'column',
-      alignItems: 'center', justifyContent: 'center',
-      background: 'var(--bg)', padding: 32,
-    }}>
-      <div style={{ maxWidth: 560, textAlign: 'center' }}>
-        {/* Logo */}
-        <div style={{ marginBottom: 32 }}>
-          <h2 style={{
-            fontSize: 14, fontWeight: 800, letterSpacing: '-0.01em',
-            textTransform: 'uppercase', color: 'var(--text)', marginBottom: 4,
-          }}>
-            TEAM TASK MANAGER
-          </h2>
-          <p style={{ fontSize: 12, color: 'var(--accent-light)' }}>Creative Workspace</p>
-        </div>
-
-        <h1 style={{
-          fontFamily: 'var(--font-display)', fontSize: '3.2rem',
-          fontWeight: 400, lineHeight: 1.1, letterSpacing: '-0.02em',
-          color: 'var(--text)', marginBottom: 16,
-        }}>
-          Manage your team&apos;s work,<br />
-          <span style={{ color: 'var(--accent)' }}>beautifully.</span>
-        </h1>
-
-        <p style={{
-          fontSize: 15, color: 'var(--text-muted)',
-          marginBottom: 36, lineHeight: 1.7,
-        }}>
-          Team Task Manager brings projects, tasks, and your whole team together in one premium workspace — with Kanban boards, role-based access, and real-time stats.
-        </p>
-
-        <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-          <Link href="/auth/signup" className="btn btn-primary btn-lg" style={{ padding: '14px 32px' }}>
-            Get started free →
+  return null;
+}
           </Link>
           <Link href="/auth/login" className="btn btn-secondary btn-lg" style={{ padding: '14px 32px' }}>
             Sign in
